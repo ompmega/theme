@@ -4,3 +4,4 @@ import $ from 'jquery'
 
 // UIkit
 import UIkit from 'uikit'
+import 'uikit/dist/js/uikit-icons'
