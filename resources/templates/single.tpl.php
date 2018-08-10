@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="section uk-section uk-section-default uk-section-small">
+<section class="section uk-section uk-section-default uk-section-small" uk-height-viewport="expand: true">
     <div class="wrapper uk-container">
         <div class="uk-grid uk-child-width-expand@s" uk-grid>
             <div class="content">
