@@ -1,73 +1,101 @@
-// Variables
+// Theme styles
 // =================================================
-@import 'variables';
+// Do not add custom styles here, only imports.
 
-// Demo
+// UIkit
 // =================================================
-// Delete demo styles below and you are ready
-// to start building your theme styling.
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: sans-serif;
-  line-height: 1.5;
-}
+// Base
+@import "variables";
+@import "mixin";
+@import "base";
 
-.app {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 6rem 0;
+// Elements
+@import "components/link";
+@import "components/heading";
+@import "components/divider";
+@import "components/list";
+@import "components/description-list";
+@import "components/table";
+@import "components/icon";
+@import "components/form-range";
+@import "components/form";
+@import "components/button";
 
-  & > * + * { margin-top: 3rem; }
-}
+// Layout
+@import "components/section";
+@import "components/container";
+@import "components/grid";
+@import "components/tile";
+@import "components/card";
 
-.wrapper {
-  display: flex;
+// Common
+@import "components/close";
+@import "components/spinner";
+@import "components/totop";
+@import "components/marker";
+@import "components/alert";
+@import "components/badge";
+@import "components/label";
+@import "components/overlay";
+@import "components/article";
+@import "components/comment";
+@import "components/search";
 
-  & > * + * { margin-left: 3em; }
-}
+// Navs
+@import "components/nav";
+@import "components/navbar";
+@import "components/subnav";
+@import "components/breadcrumb";
+@import "components/pagination";
+@import "components/tab";
+@import "components/slidenav";
+@import "components/dotnav";
+@import "components/thumbnav";
 
-.header {
-  padding: 3em;
-  color: $white;
-  background-color: $primary;
-}
+// JavaScript
+@import "components/accordion";
+@import "components/drop";
+@import "components/dropdown";
+@import "components/modal";
+@import "components/lightbox";
+@import "components/slideshow";
+@import "components/slider";
+@import "components/sticky";
+@import "components/offcanvas";
+@import "components/switcher";
+@import "components/leader";
 
-.content {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
+// Additional
+@import "components/iconnav";
+@import "components/notification";
+@import "components/tooltip";
+@import "components/placeholder";
+@import "components/progress";
+@import "components/sortable";
+@import "components/countdown";
 
-.sidebar {
-  flex: 0 0 25%;
-  max-width: 25%;
+// Utilities
+@import "components/animation";
+@import "components/width";
+@import "components/height";
+@import "components/text";
+@import "components/column";
+@import "components/cover";
+@import "components/background";
+@import "components/align";
+@import "components/svg";
+@import "components/utility";
+@import "components/flex";
+@import "components/margin";
+@import "components/padding";
+@import "components/position";
+@import "components/transition";
+@import "components/visibility";
+@import "components/inverse";
 
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-}
+// Custom styles
+@import "main";
 
-.footer {
-  padding-top: 1em;
-
-  ul {
-    padding: 0;
-
-    & > * + * { margin-left: 0.5em; }
-
-    li { display: inline-block; }
-  }
-}
-
-.posts {
-  & > * + * { margin-top: 1.5rem; }
-}
-
-.thumbnail {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// Need to be loaded last
+@import "components/print";
