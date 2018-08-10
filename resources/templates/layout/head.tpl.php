@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
     <head>
         <meta charset="utf-8">
@@ -7,7 +7,16 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <main id="app" class="app">
-            <nav>
-                <a href="<?= get_home_url(); ?>"><h1>WordPress Starter Theme</h1></a>
-            </nav>
+        <div id="app" class="uk-offcanvas-content">
+            <div class="uk-navbar-container">
+                <nav class="uk-container" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a class="uk-navbar-item uk-logo" href="<?= get_home_url(); ?>"><?= bloginfo('name'); ?></a>
+                        <?php wp_nav_menu([
+                            'theme_location' => 'primary',
+                            'container' => false,
+                            'menu_class' => 'uk-navbar-nav uk-visible@m'
+                        ]); ?>
+                    </div>
+                </nav>
+            </div>

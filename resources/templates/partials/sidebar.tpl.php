@@ -1,6 +1,6 @@
-<aside class="sidebar">
+<aside class="sidebar uk-width-medium">
     <?php if (is_active_sidebar('sidebar')) : ?>
-        <ul>
+        <ul class="uk-list">
             <?php dynamic_sidebar('sidebar'); ?>
         </ul>
     <?php else: ?>

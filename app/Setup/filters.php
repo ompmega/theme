@@ -40,3 +40,18 @@ function modify_excerpt_length()
     return 60;
 }
 add_filter('excerpt_length', 'Tonik\Theme\App\Setup\modify_excerpt_length');
+
+/**
+ * Add UIkit active class to menu.
+ *
+ * @param $classes
+ * @param $item
+ */
+function required_active_nav_class($classes, $item)
+{
+    if ($item->current == 1 || $item->current_item_ancestor == true) {
+        $classes[] = 'uk-active';
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'Tonik\Theme\App\Setup\required_active_nav_class', 10, 2);
