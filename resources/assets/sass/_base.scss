@@ -1,18 +1,4 @@
 // Base
 // =================================================
 
-$base-heading-letter-spacing: -2px;
-
-@mixin hook-base-h1() {
-    letter-spacing: $base-heading-letter-spacing;
-}
-
-@mixin hook-base-h2() {
-    letter-spacing: $base-heading-letter-spacing;
-}
-
-@mixin hook-base-h3() {
-    letter-spacing: $base-heading-letter-spacing;
-}
-
 @import "~uikit/src/scss/components/base";
