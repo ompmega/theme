@@ -22,6 +22,7 @@ use function Tonik\Theme\App\asset_path;
  */
 function register_stylesheets() {
     wp_enqueue_style('app', asset_path('css/app.css'));
+    wp_enqueue_style('fonts', 'https://use.typekit.net/cbu5gya.css');
 }
 add_action('wp_enqueue_scripts', 'Tonik\Theme\App\Http\register_stylesheets');
 
